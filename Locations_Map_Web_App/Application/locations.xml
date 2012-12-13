@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locations>
+	<location>
+		<title>Hollywood Sign</title>
+		<address>3204 Canyon Lake Drive, Los Angeles, CA</address>
+		<details>The Hollywood Sign is a famous landmark in the Hollywood Hills area of Mount Lee, Santa Monica Mountains, in Los Angeles, California. The iconic sign spells out the name of the area in 45-foot-tall (14 m) and 350-foot-long (110 m) white letters.</details>
+		<images>
+			<image>1_1.jpg</image>
+			<image>1_2.jpg</image>
+		</images>
+		<marker>/css/img/markers/photography.png</marker>
+		<lat>34.134103</lat>
+		<lng>-118.321694</lng>
+	</location>
+	<location>
+		<title>Union Station</title>
+		<address>800 North Alameda Street Los Angeles, CA 90012</address>
+		<details>Los Angeles Union Station (or LAUS, formerly the Los Angeles Union Passenger Terminal or LAUPT) is the main railway station in Los Angeles, California.</details>
+		<images>
+		</images>
+		<marker>/css/img/markers/binoculars.png</marker>
+		<lat>34.05515</lat>
+		<lng>-118.23525</lng>
+	</location>
+	<location>
+		<title>Santa Monica Pier</title>
+		<address>1 Colorado Avenue Santa Monica, CA 90401</address>
+		<details>Santa Monica has had several piers over the years, however the current Santa Monica Pier is actually two adjoining piers that long had separate owners. The long, narrow Municipal Pier opened September 9, 1909, primarily to carry sewer pipes beyond the breakers, and had no amenities. The short, wide adjoining Pleasure Pier to the south, a.k.a. Newcomb Pier, was built in 1916 by Charles I. D. Looff and his son Arthur, amusement park pioneers.</details>
+		<images>
+			<image>3_1.jpg</image>
+		</images>
+		<marker>/css/img/markers/binoculars.png</marker>
+		<lat>34.007384</lat>
+		<lng>-118.49956512</lng>
+	</location>
+	<location>
+		<title>Rodeo Drive</title>
+		<address>Rodeo Dr. Beverly Hills, CA 90212</address>
+		<details>Rodeo Drive of Beverly Hills, California is a shopping district known for designer label and haute couture fashion. The name generally refers to a three-block long stretch of boutiques and shops but the street stretches further north and south.</details>
+		<images>
+			<image>4_1.jpg</image>
+			<image>4_2.jpg</image>
+		</images>
+		<thumb>4_2_thumb.jpg</thumb>
+		<marker>/css/img/markers/bustour.png</marker>
+		<lat>34.076884</lat>
+		<lng>-118.412380</lng>
+	</location>
+</locations>

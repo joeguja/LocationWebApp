@@ -1,0 +1,73 @@
+// 1. Variable overrides, example:
+
+$base-color: #73ADEE;
+$active-color: #81D75A;
+
+//$accordion-header-background-color: #88171B;
+//$tabs-bottom-gradient: 'matte';
+// 2. Include Sencha Touch styles
+@import 'sencha-touch/default/all';
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-toolbar-forms;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-carousel;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-form;
+@include sencha-loading-spinner;
+@include sencha-msgbox;
+
+// 3. Define custom styles (can use SASS/Compass), example:
+// .mybox {
+//     @include border-radius(4px);
+// }
+.x-tab-active img {
+    background: #FFFF00 none !important;
+}
+.x-list-header {
+	color:white !important;
+
+}
+span.list-address {
+	color: #666666 !important; 
+
+}
+.imagePanel {
+	background: #000000 none !important;
+
+}
+.x-form-fieldset-title {
+	color:white !important;
+
+}
+#ext-gen1657 {
+	background: #E3E3E3 none !important;
+
+}
+#ext-gen1657 a{
+	color: $active-color !important;
+}
+a.more-info {
+	color: $active-color !important;
+	text-transform: uppercase;
+	font-size: .8em;
+	font-weight:bold;
+}
+#get-directions {
+	padding-top:20px;
+}
+#get-directions a span{
+	color: $active-color !important;
+}
+
+span.list-address {
+	color:#cccccc;
+}
+@include pictos-iconmask(locate3);
+@include pictos-iconmask(list);
+@include pictos-iconmask(home2);

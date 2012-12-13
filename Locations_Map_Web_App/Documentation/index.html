@@ -1,0 +1,542 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Locations Map Web App - A quick mobile representation of your data</title>
+	
+	<meta name="description" content="Thank you for purchasing my mobile app!  If you have any questions please feel free to contact &#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#103;&#101;&#111;&#115;&#105;&#116;&#104;&#46;&#99;&#111;&#109;">
+	<meta name="author" content="Mailo Arsac">
+	<meta name="copyright" content="Mailo Arsac">
+	<meta name="generator" content="Documenter v1.5 http://rxa.li/documenter">
+	<meta name="date" content="2011-09-11T23:04:13+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	<script src="js/jquery.1.5.1.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=542,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#xml">XML</a></li>
+			<li><a href="#php">PHP</a></li>
+			<li><a href="#javascript">Javascript</a></li>
+			<li><a href="#html">HTML</a></li>
+			<li><a href="#css_and_images">CSS and Images</a></li>
+			<li><a href="#additional_info">Additional info</a></li>
+			<li><a href="#sources_and_credits">Sources and Credits</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Mailo Arsac 2011<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.5</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Locations Map Web App</h1><h2>A quick mobile representation of your data</h2><hr><ul><li>Created: 09/01/2011</li><li>By: Mailo Arsac</li><li><a href=""></a></li><li>Email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#103;&#101;&#111;&#115;&#105;&#116;&#104;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#103;&#101;&#111;&#115;&#105;&#116;&#104;&#46;&#99;&#111;&#109;</a></li></ul><p>Thank you for purchasing my mobile app!  If you have any questions please feel free to contact &#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#103;&#101;&#111;&#115;&#105;&#116;&#104;&#46;&#99;&#111;&#109;</p></section><section id="xml">
+	<h3>XML</h3><hr class="notop">
+<p>
+	The <strong>locations.xml</strong> file located in the root of the Application folder is the source of the data for the application. &nbsp;The layout below is a sample entry.</p>
+<pre class="brush: html">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;locations&gt;
+
+  &lt;location&gt;
+
+    &lt;title&gt;Hollywood Sign&lt;/title&gt;
+
+    &lt;address&gt;3204 Canyon Lake Drive, Los Angeles, CA&lt;/address&gt;
+
+    &lt;details&gt;The Hollywood Sign is a famous landmark in the Hollywood Hills area of Mount Lee, Santa Monica Mountains, in Los Angeles, California. The iconic sign spells out the name of the area in 45-foot-tall (14 m) and 350-foot-long (110 m) white letters.&lt;/details&gt;
+
+    &lt;images&gt;
+
+      &lt;image&gt;1_1.jpg&lt;/image&gt;
+
+      &lt;image&gt;1_2.jpg&lt;/image&gt;
+
+    &lt;/images&gt;
+
+    &lt;marker&gt;/css/img/markers/photography.png&lt;/marker&gt;
+
+    &lt;lat&gt;34.134103&lt;/lat&gt;
+
+    &lt;lng&gt;-118.321694&lt;/lng&gt;
+
+  &lt;/location&gt;
+
+&lt;/locations&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	In the js/config.js file you can see the following entry:</p>
+<pre class="brush: js">
+var locationFields = [
+
+        {name: &#39;title&#39;, type: &#39;string&#39;},
+
+        {name: &#39;address&#39;, type: &#39;string&#39;},
+
+        {name: &#39;details&#39;, type: &#39;string&#39;},
+
+        {name: &#39;images&#39;, type: &#39;object&#39;},
+
+        {name: &#39;thumb&#39;, type: &#39;string&#39;},
+
+        {name: &#39;marker&#39;, type: &#39;string&#39;},
+
+        {name: &#39;lat&#39;,       type: &#39;float&#39;},
+
+        {name: &#39;lng&#39;,   type: &#39;float&#39;}
+
+    ]</pre>
+<p>
+	This tells the application what data to store when initializing. &nbsp;It is populated by default with the minimal fields you need to have in order for the app to function but you can easily add more.</p>
+<p>
+	Here is a list of the default fields:</p>
+<ul>
+	<li>
+		<strong>title:</strong> the title of the entry</li>
+	<li>
+		<strong>address:</strong> the address of the entry</li>
+	<li>
+		<strong>details:</strong> a description of the location</li>
+	<li>
+		<strong>images:</strong> this is a list of images attributed to the location to be displayed in the image carousel</li>
+	<li>
+		<strong>marker: </strong>this is the icon that will appear on the map for this location</li>
+	<li>
+		<strong>lat:</strong> the latitude of the location</li>
+	<li>
+		<strong>lng:</strong> the longitude of the location</li>
+</ul>
+<h4>
+	Adding an additional field</h4>
+<p>
+	The first step in adding an additional field is creating a tag for it in the XML file, for this example we will add a year entry since the default locations are monuments to bedisplayed in the details section.</p>
+<p>
+	in the locations.xml file we add the following line with the &lt;year&gt; tag somewhere in between the &lt;location&gt;&lt;/location&gt; tag:</p>
+<pre class="brush: html">
+&lt;title&gt;Hollywood Sign&lt;/title&gt;
+&lt;year&gt;1923&lt;/year&gt;</pre>
+<p>
+	Next, we need to edit the config.js file to tell the application about our new field.</p>
+<pre class="brush: js">
+var locationFields = [
+... 
+        {name: &#39;lng&#39;,   type: &#39;float&#39;},
+        {name: &#39;year&#39;, type: &#39;string&#39;},
+...
+    ]</pre>
+<p>
+	The last step is to tell the application were to display the new data in the details tab, goto the last line in the config.js file and edit it like so:</p>
+<pre class="brush: js">
+var detailsTemplate = <span class="Apple-tab-span" style="white-space:pre"> </span>&#39;&lt;div&gt;&lt;tpl if=&quot;year&quot;&gt;&lt;p&gt;Built in {year}&lt;/p&gt;&lt;/tpl&gt;&lt;tpl if=&quot;address&quot;&gt;&lt;address&gt;{address}&lt;/address&gt;&lt;/tpl&gt;&lt;tpl if=&quot;details&quot;&gt;&lt;p&gt;{details}&lt;/p&gt;&lt;/tpl&gt;&lt;/div&gt;&#39;;</pre>
+<p>
+	Notice we added&nbsp;&lt;tpl if=&quot;year&quot;&gt;&lt;p&gt;Built in {year}&lt;/p&gt;&lt;/tpl&gt; This will output &quot;Built in 1923 at the top of the panel now if data exists for that entry.</p>
+</section>
+<section id="php">
+	<h3>PHP</h3><hr class="notop">
+<p>
+	The locations app comes with one PHP file: json.php. &nbsp;This is a quick and simple way to convert the data in the XML file to JSON which the app can interpret. &nbsp;If you plan on using data from a database for your implementation you will need to create your own PHP file that connects to your database and then JSON encode your results. &nbsp;If your server doesnt have PHP capabilities, you can always encode the data yourself, there are several tools online like <a href="http://www.thomasfrank.se/xml_to_json.html">this one</a>&nbsp;that will allow you to create a .json file, just change the JSON_SOURCE variable in the config.js file and the application will use your data.</p>
+<pre class="brush: php">
+&lt;?php
+
+//Check if the locations.xml file exists, if it does encode it to JSON for the app
+
+if (file_exists(&#39;locations.xml&#39;)) {
+
+    <span class="Apple-tab-span" style="white-space:pre"> </span>$xml = simplexml_load_file(&#39;locations.xml&#39;);
+
+    <span class="Apple-tab-span" style="white-space:pre"> </span>$json = json_encode($xml);
+
+    <span class="Apple-tab-span" style="white-space:pre"> </span>print_r($json);
+
+} else {
+
+    <span class="Apple-tab-span" style="white-space:pre"> </span>exit(&#39;Failed to open locations.xml.&#39;);
+
+}
+
+?&gt;</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="javascript">
+	<h3>Javascript</h3><hr class="notop">
+<p>
+	The javascript files are the bulk of the app which is built on the <a href="http://www.sencha.com/products/touch/">Sencha Touch</a> framework which uses the MVC approch to programming. &nbsp;The first file to look at is js/config.js which is where you will configure the basic variables to get your project started, each variable&#39;s description is directly above it:</p>
+<pre class="brush: js">
+//This is where you will configure your web app
+
+//SETTINGS
+
+//Enter the URI where the web app is located on your server
+
+var HTTP_ROOT = &#39;http://your.domain/root_folder&#39;;
+
+
+//If you want to use a different source for the JSON data you can change it here
+
+var JSON_SOURCE = &#39;json.php&#39;;
+
+
+//HOMEPAGE
+
+
+//Homepage title
+
+var homeTitle = &#39;Locations Web App&#39;;
+
+
+//Homepage content
+
+var homeHtml = &#39;&lt;div style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;location-app.png&quot;/&gt;&lt;p&gt;The &lt;b&gt;Locations Web App&lt;/b&gt; is the perfect way to display mappable content on mobile devices&lt;/p&gt;&lt;/div&gt;&#39;;
+
+
+//Homepage icon text
+
+var homeTabTxt = &#39;Home&#39;;
+
+
+//LISTING PAGE
+
+
+//Listings title
+
+var listingTitle = &#39;Locations Listing&#39;;
+
+
+//Listing icon text
+
+var listingTabTxt = &#39;Locations&#39;;
+
+
+
+//MAP SETTING
+
+
+//Starting coordinates for Map
+
+var startLat = 34.05;
+
+var startLng = -118.246;
+
+
+//Text for the link in the info window to the location detail card
+
+var moreInfo = &#39;View Location&#39;;
+
+
+//These fields are stored from the JSON call, if you would like to add field to the XML 
+
+//file make sure to add them to this list with the appropriate type
+
+var locationFields = [
+
+        {name: &#39;title&#39;, type: &#39;string&#39;},
+
+        {name: &#39;address&#39;, type: &#39;string&#39;},
+
+        {name: &#39;details&#39;, type: &#39;string&#39;},
+
+        {name: &#39;images&#39;, type: &#39;object&#39;},
+
+        {name: &#39;thumb&#39;, type: &#39;string&#39;},
+
+        {name: &#39;marker&#39;, type: &#39;string&#39;},
+
+        {name: &#39;lat&#39;,       type: &#39;float&#39;},
+
+        {name: &#39;lng&#39;,   type: &#39;float&#39;}
+
+    ]
+
+    
+
+//This dictates the layout of the details card of the location, you can change it if necessary or add fields if you have already added them above
+
+//Make sure and encapsulate field variables in curly braces
+
+var detailsTemplate = <span class="Apple-tab-span" style="white-space:pre"> </span>&#39;&lt;div&gt;&lt;tpl if=&quot;address&quot;&gt;&lt;address&gt;{address}&lt;/address&gt;&lt;/tpl&gt;&lt;tpl if=&quot;details&quot;&gt;&lt;p&gt;{details}&lt;/p&gt;&lt;/tpl&gt;&lt;/div&gt;&#39;;</pre>
+<p>
+	The remaining javascript files fall into these categories:</p>
+<ul>
+	<li>
+		<strong>Models:</strong> There is one model file, a model communicates with the data, in the case of this app, the location information.</li>
+	<li>
+		<strong>Views: </strong>These files display the data and create the different panels of the application
+		<ul>
+			<li>
+				js/app/views/Viewport.js - The container view for the whole app</li>
+			<li>
+				js/app/views/home/HomeIndexView.js - The homepage</li>
+			<li>
+				js/app/views/map/MapMain.js - The main map on the map tab</li>
+			<li>
+				js/app/views/map/MapDetail.js - The detail map for locations opened on the main map page</li>
+			<li>
+				js/app/views/location/Locations.js - The list of locations</li>
+			<li>
+				js/app/views/location/LocationDetail.js - The detail panel for each location</li>
+			<li>
+				js/app/views/location/LocationInfo.js - The text panel for the detail</li>
+			<li>
+				js/app/views/location/LocationImage.js - The image carousel in the detail panel</li>
+		</ul>
+	</li>
+	<li>
+		<strong>Controllers: </strong>These files interact with the data from the model
+		<ul>
+			<li>
+				js/app/controllers/MapController.js - Contains actions for adding markers, updating location, opening detail panels</li>
+		</ul>
+	</li>
+</ul>
+</section>
+<section id="html">
+	<h3>HTML</h3><hr class="notop">
+<p>
+	There is one HTML file in the project: app.html. &nbsp;This file loads all the javascript and css files that the app needs in the correct order.</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;html&gt;
+&lt;head&gt;
+
+  &lt;!-- Load application css files  --&gt;
+
+  &lt;link href=&quot;css/application.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+
+  &lt;link href=&quot;css/custom.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+
+  &lt;!-- Load the sencha touch framework  --&gt;
+
+  &lt;script src=&quot;js/sencha-touch.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- Load Google Maps  --&gt;
+
+  &lt;script type=&quot;text/javascript&quot; src=&quot;http://maps.google.com/maps/api/js?sensor=true&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- Load our config file with all the custom variables  --&gt;
+
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/config.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- Load the app initializer  --&gt;
+
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/app.js&quot;&gt;&lt;/script&gt;
+
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/routes.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- Load our model file  --&gt;
+
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/models/LocationModel.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- Load all of the views  --&gt;
+
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/Viewport.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/home/HomeIndexView.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/home/HomeAboutView.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/map/MapMain.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/map/MapDetail.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/location/Locations.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/location/LocationDetail.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/location/LocationInfo.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/views/location/LocationImage.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/controllers/MapController.js&quot;&gt;&lt;/script&gt;
+  
+  &lt;!-- Load all of the controllers  --&gt;
+
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/app/controllers/LocationsController.js&quot;&gt;&lt;/script&gt;
+
+&lt;/head&gt;
+
+  &lt;body&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="css_and_images">
+	<h3>CSS and Images</h3><hr class="notop">
+<p>
+	There are two CSS files that can be found in the application directory. &nbsp;The first application.css, is the bulk of the styling for the app. &nbsp;This file is created dynamically using sass and&nbsp;<a href="http://compass-style.org/">compass</a>&nbsp;and may be too advanced for some. &nbsp;For this reason you will find a file by the name of &quot;custom.css&quot; which will allow you to override any styles you would like.</p>
+<p>
+	Several map marker icons have also been included in the folder <strong>css/img/markers. &nbsp;</strong>Browse through these png files as you can include a different icon for each location entry and add as many custom images as you would like in png format.</p>
+<h4>
+	Using Compass to edit theme (advanced users)</h4>
+<p>
+	Once you have installed Compass, navigate to Compass/scss and open the application.scss file. &nbsp;When compass compiles the .scss file it uses base colors to create the gradient you see in the UI of the app. &nbsp;You can easily change the entire color scheme by simply caging the value of $base-color. &nbsp;For a more detailed list of te variables you can edit, view the <a href="http://www.sencha.com/blog/an-introduction-to-theming-sencha-touch">sencha touch introduction on themeing</a>.</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: css">
+// 1. Variable overrides, example:
+
+
+$base-color: #73ADEE;
+
+$active-color: #81D75A;
+
+
+//$accordion-header-background-color: #88171B;
+
+//$tabs-bottom-gradient: &#39;matte&#39;;
+
+
+
+// 2. Include Sencha Touch styles
+
+@import &#39;sencha-touch/default/all&#39;;
+
+@include sencha-panel;
+
+@include sencha-buttons;
+
+@include sencha-sheet;
+
+@include sencha-picker;
+
+@include sencha-toolbar-forms;
+
+@include sencha-tabs;
+
+@include sencha-toolbar;
+
+@include sencha-carousel;
+
+@include sencha-indexbar;
+
+@include sencha-list;
+
+@include sencha-layout;
+
+@include sencha-form;
+
+@include sencha-loading-spinner;
+
+@include sencha-msgbox;
+
+
+// 3. Define custom styles, add any additional css rules you would like:
+
+
+//Color of the active menu bar
+
+.x-tab-active img {
+
+    background: #FFFF00 none !important;
+
+}
+
+.x-list-header {
+
+color:white !important;
+
+
+}
+
+//Background of the sliding image gallery
+
+.imagePanel {
+
+background: #000000 none !important;
+
+
+}
+
+//More info popup on the map view
+
+a.more-info {
+
+color: $active-color !important;
+
+text-transform: uppercase;
+
+font-size: .8em;
+
+font-weight:bold;
+
+}
+
+
+// Add additional icons for the bottom toolbar
+
+@include pictos-iconmask(locate3);
+
+@include pictos-iconmask(list);
+
+@include pictos-iconmask(home2);</pre>
+<p>
+	Additional information on using sass and compass with the Sencha Touch Framework can be found <a href="http://www.sencha.com/blog/getting-sassy-with-css">here</a>.</p>
+</section>
+<section id="additional_info">
+	<h3>Additional info</h3><hr class="notop">
+<p>
+	If you plan on using this applications as a mobile alternative you can use the following code to redirect iPhone and iPad to the location of the app on your server, in this example the app folder was placed in a folder called &quot;mobile_directory&quot;:</p>
+<pre class="brush: js" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; width: auto; clear: none; overflow-x: visible; overflow-y: visible; font-size: 12px; line-height: 1.333; white-space: pre; font-family: monospace; ">
+<span style="color: rgb(51, 153, 51); ">&lt;</span>script type<span style="color: rgb(51, 153, 51); ">=</span><span style="color: rgb(51, 102, 204); ">&quot;text/javascript&quot;</span><span style="color: rgb(51, 153, 51); ">&gt;</span> 
+	<span style="color: rgb(0, 0, 102); font-weight: bold; ">if</span> <span style="color: rgb(0, 153, 0); ">(</span><span style="color: rgb(0, 153, 0); ">(</span>navigator.<span style="color: rgb(102, 0, 102); ">userAgent</span>.<span style="color: rgb(102, 0, 102); ">indexOf</span><span style="color: rgb(0, 153, 0); ">(</span><span style="color: rgb(51, 102, 204); ">&#39;iPhone&#39;</span><span style="color: rgb(0, 153, 0); ">)</span> <span style="color: rgb(51, 153, 51); ">!=</span> <span style="color: rgb(51, 153, 51); ">-</span><span style="color: rgb(204, 0, 0); ">1</span><span style="color: rgb(0, 153, 0); ">)</span> <span style="color: rgb(51, 153, 51); ">||</span> <span style="color: rgb(0, 153, 0); ">(</span>navigator.<span style="color: rgb(102, 0, 102); ">userAgent</span>.<span style="color: rgb(102, 0, 102); ">indexOf</span><span style="color: rgb(0, 153, 0); ">(</span><span style="color: rgb(51, 102, 204); ">&#39;iPod&#39;</span><span style="color: rgb(0, 153, 0); ">)</span> <span style="color: rgb(51, 153, 51); ">!=</span> <span style="color: rgb(51, 153, 51); ">-</span><span style="color: rgb(204, 0, 0); ">1</span><span style="color: rgb(0, 153, 0); ">)</span> <span style="color: rgb(51, 153, 51); ">||</span> <span style="color: rgb(0, 153, 0); ">(</span>navigator.<span style="color: rgb(102, 0, 102); ">userAgent</span>.<span style="color: rgb(102, 0, 102); ">indexOf</span><span style="color: rgb(0, 153, 0); ">(</span><span style="color: rgb(51, 102, 204); ">&#39;iPad&#39;</span><span style="color: rgb(0, 153, 0); ">)</span> <span style="color: rgb(51, 153, 51); ">!=</span> <span style="color: rgb(51, 153, 51); ">-</span><span style="color: rgb(204, 0, 0); ">1</span><span style="color: rgb(0, 153, 0); ">)</span><span style="color: rgb(0, 153, 0); ">)</span> <span style="color: rgb(0, 153, 0); ">{</span>
+	document.<span style="color: rgb(102, 0, 102); ">location</span> <span style="color: rgb(51, 153, 51); ">=</span> <span style="color: rgb(51, 102, 204); ">&quot;http://your.com/mobile_directory&quot;</span><span style="color: rgb(51, 153, 51); ">;</span>
+	<span style="color: rgb(0, 153, 0); ">}</span>
+<span style="color: rgb(51, 153, 51); ">&lt;/</span>script<span style="color: rgb(51, 153, 51); ">&gt;</span></pre>
+<script type="text/javascript"> // <![CDATA[
+	if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {
+		document.location = "http://www.scottrockers.com/iphone.html";
+	} // ]]>
+</script><p>
+	&nbsp;</p>
+</section>
+<section id="sources_and_credits">
+	<h3>Sources and Credits</h3><hr class="notop">
+<p>
+	This app uses the following open source resources:</p>
+<ul>
+	<li>
+		Sencha Touch Framework</li>
+	<li>
+		Map Icons Collection by&nbsp;Nicolas Mollet</li>
+</ul>
+</section>
+
+	</div>
+</body>
+</html>
